@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>yDog Privacy Policy</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@500&display=swap');
+
+:root{
+  --bg:#FAF9F4;
+  --paper:#FFFFFF;
+  --ink:#20241D;
+  --ink-soft:#5C6357;
+  --line:#E4E1D5;
+  --accent:#2E7D32;
+  --accent-ink:#1F5723;
+  --tag-bg:#EAF2E7;
+  --tag-ink:#2E6B32;
+  --tag-border:#CFE2CA;
+  --divider:#D8D4C6;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14160F;
+    --paper:#1B1E15;
+    --ink:#EDEEE6;
+    --ink-soft:#A3AB9A;
+    --line:#333726;
+    --accent:#7BC47F;
+    --accent-ink:#9BDA9E;
+    --tag-bg:#20301F;
+    --tag-ink:#8FD08F;
+    --tag-border:#33472F;
+    --divider:#333726;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#14160F;
+  --paper:#1B1E15;
+  --ink:#EDEEE6;
+  --ink-soft:#A3AB9A;
+  --line:#333726;
+  --accent:#7BC47F;
+  --accent-ink:#9BDA9E;
+  --tag-bg:#20301F;
+  --tag-ink:#8FD08F;
+  --tag-border:#33472F;
+  --divider:#333726;
+}
+
+*{box-sizing:border-box;}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Source Serif 4', Georgia, serif;
+  font-size:17px;
+  line-height:1.65;
+  padding:0 20px 80px;
+}
+
+.sheet{
+  max-width:680px;
+  margin:0 auto;
+  padding-top:48px;
+}
+
+header.top{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:6px;
+}
+.dot{
+  width:14px;height:14px;border-radius:50%;
+  background:var(--accent);
+  flex:0 0 auto;
+  box-shadow:0 0 0 4px var(--tag-bg);
+}
+header.top h1{
+  font-family:'Libre Franklin',system-ui,sans-serif;
+  font-weight:800;
+  font-size:26px;
+  letter-spacing:-0.01em;
+  margin:0;
+  text-wrap:balance;
+}
+
+.meta{
+  color:var(--ink-soft);
+  font-family:'IBM Plex Mono', ui-monospace, monospace;
+  font-size:12.5px;
+  letter-spacing:.02em;
+  margin:0 0 40px;
+  padding-bottom:28px;
+  border-bottom:1px solid var(--line);
+}
+
+.langbar{
+  display:flex;
+  gap:8px;
+  margin-bottom:40px;
+}
+.langbar a{
+  font-family:'Libre Franklin',system-ui,sans-serif;
+  font-weight:700;
+  font-size:12px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  color:var(--tag-ink);
+  background:var(--tag-bg);
+  border:1px solid var(--tag-border);
+  padding:5px 12px;
+  border-radius:999px;
+  text-decoration:none;
+}
+.langbar a:hover{ text-decoration:underline; }
+
+section.lang{ margin-bottom:56px; }
+
+h2{
+  font-family:'Libre Franklin',system-ui,sans-serif;
+  font-weight:700;
+  font-size:20px;
+  color:var(--accent-ink);
+  margin:34px 0 10px;
+  text-wrap:balance;
+}
+section.lang > h2:first-of-type{ margin-top:0; }
+
+p{ margin:0 0 16px; max-width:64ch; }
+ul{ margin:0 0 16px; padding-left:22px; max-width:64ch; }
+li{ margin-bottom:10px; }
+
+strong{ color:var(--ink); font-weight:600; }
+
+.perm{
+  font-family:'IBM Plex Mono', ui-monospace, monospace;
+  font-size:0.82em;
+  background:var(--tag-bg);
+  color:var(--tag-ink);
+  border:1px solid var(--tag-border);
+  padding:1px 6px;
+  border-radius:4px;
+  white-space:nowrap;
+}
+
+.callout{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-left:3px solid var(--accent);
+  border-radius:6px;
+  padding:16px 18px;
+  margin:0 0 20px;
+  font-size:15.5px;
+}
+.callout p:last-child{ margin-bottom:0; }
+
+hr.divider{
+  border:none;
+  border-top:1px dashed var(--divider);
+  margin:0 0 40px;
+}
+
+footer{
+  color:var(--ink-soft);
+  font-size:14px;
+  padding-top:24px;
+  border-top:1px solid var(--line);
+}
+footer a{ color:var(--accent-ink); }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="top">
+    <span class="dot" aria-hidden="true"></span>
+    <h1>Política de privacidad de yDog</h1>
+  </header>
+  <p class="meta">ÚLTIMA ACTUALIZACIÓN: 7 DE SEPTIEMBRE DE 2026 &nbsp;·&nbsp; APLICA A LA APP "yDog" (com.ydog.ydog_terminal)</p>
+
+  <div class="langbar">
+    <a href="#es">ESPAÑOL</a>
+    <a href="#en">ENGLISH</a>
+  </div>
+
+  <section class="lang" id="es">
+    <h2>Qué hace esta app</h2>
+    <p>
+      yDog es la app complementaria de un contador Geiger con Bluetooth (el
+      "yDog"). Se conecta directamente al dispositivo por Bluetooth de baja
+      energía (BLE) para mostrar lecturas, guardar puntos de interés,
+      analizar espectros de pulso y actualizar su firmware. <strong>La app
+      no tiene ningún servidor propio</strong> — no existe una cuenta,
+      un inicio de sesión, ni un backend en la nube al que se conecte.
+    </p>
+
+    <h2>Permisos que pide y por qué</h2>
+    <ul>
+      <li>
+        <span class="perm">BLUETOOTH_SCAN</span> /
+        <span class="perm">BLUETOOTH_CONNECT</span> — para encontrar y
+        conectarse al yDog. Estos datos (nombre y dirección del
+        dispositivo Bluetooth) se usan únicamente para recordar a cuál
+        yDog conectarse y nunca salen del teléfono.
+      </li>
+      <li>
+        <span class="perm">ACCESS_FINE_LOCATION</span> /
+        <span class="perm">ACCESS_COARSE_LOCATION</span> — Android exige
+        este permiso para poder buscar dispositivos Bluetooth cercanos en
+        algunas versiones, aunque la app no lea tu ubicación para ese fin.
+        La pestaña <strong>Navegación</strong> sí usa el GPS real del
+        teléfono, pero solo para calcular la distancia y el rumbo hacia
+        tus propios puntos guardados, y para corregir la declinación
+        magnética de la brújula. Esa posición se procesa en el teléfono y,
+        si corresponde, se envía únicamente al yDog conectado por
+        Bluetooth — nunca a un servidor.
+      </li>
+    </ul>
+
+    <div class="callout">
+      <p>
+        En síntesis: todo lo que la app guarda (puntos de interés,
+        calibraciones de ySpec, preferencias) queda almacenado localmente
+        en tu teléfono. Nada se sube a la nube, se vende, ni se comparte
+        con terceros, porque no hay ningún lugar al que subirlo.
+      </p>
+    </div>
+
+    <h2>Compartir datos</h2>
+    <p>
+      Si tocás el botón de compartir o copiar datos, elegís vos el
+      destino a través del selector nativo de tu teléfono (mensajería,
+      correo, etc.). La app no envía nada por su cuenta.
+    </p>
+
+    <h2>Actualizaciones de firmware</h2>
+    <p>
+      La app incluye una copia del firmware del yDog dentro de sus
+      propios archivos, y lo transfiere directamente al dispositivo por
+      Bluetooth cuando lo pedís. Esto tampoco involucra ningún servidor
+      externo.
+    </p>
+
+    <h2>Menores de edad</h2>
+    <p>
+      La app no está dirigida a niños y no recopila intencionalmente
+      información de menores — de hecho, no recopila información
+      personal de nadie, como se explica arriba.
+    </p>
+
+    <h2>Cambios a esta política</h2>
+    <p>
+      Si esta política cambia, se va a actualizar la fecha al comienzo de
+      esta misma página.
+    </p>
+
+    <h2>Contacto</h2>
+    <p>
+      Preguntas sobre privacidad: <a href="mailto:softcdyllc@gmail.com">softcdyllc@gmail.com</a>
+    </p>
+  </section>
+
+  <hr class="divider">
+
+  <section class="lang" id="en">
+    <h2>What this app does</h2>
+    <p>
+      yDog is the companion app for a Bluetooth Geiger counter (the
+      "yDog"). It connects directly to the device over Bluetooth Low
+      Energy (BLE) to show live readings, save points of interest,
+      analyze pulse spectra, and update its firmware. <strong>The app has
+      no server of its own</strong> — there is no account, no sign-in,
+      and no cloud backend it talks to.
+    </p>
+
+    <h2>Permissions it requests, and why</h2>
+    <ul>
+      <li>
+        <span class="perm">BLUETOOTH_SCAN</span> /
+        <span class="perm">BLUETOOTH_CONNECT</span> — to find and connect
+        to the yDog. This data (the Bluetooth device's name and address)
+        is used only to remember which yDog to connect to, and never
+        leaves the phone.
+      </li>
+      <li>
+        <span class="perm">ACCESS_FINE_LOCATION</span> /
+        <span class="perm">ACCESS_COARSE_LOCATION</span> — Android
+        requires this permission to scan for nearby Bluetooth devices on
+        some versions, even though the app doesn't read your location
+        for that purpose. The <strong>Navigation</strong> tab does use
+        the phone's real GPS, but only to compute distance and bearing to
+        your own saved points, and to correct the compass's magnetic
+        declination. That position is processed on the phone and, when
+        relevant, sent only to the connected yDog over Bluetooth — never
+        to a server.
+      </li>
+    </ul>
+
+    <div class="callout">
+      <p>
+        In short: everything the app stores (points of interest, ySpec
+        calibrations, preferences) stays on your phone. Nothing is
+        uploaded, sold, or shared with third parties, because there is
+        nowhere for it to go.
+      </p>
+    </div>
+
+    <h2>Sharing data</h2>
+    <p>
+      Tapping the share or copy-data buttons lets you pick the
+      destination yourself, through your phone's own native share sheet
+      (messaging, email, etc.). The app never sends anything on its own.
+    </p>
+
+    <h2>Firmware updates</h2>
+    <p>
+      The app bundles a copy of the yDog's firmware inside its own files
+      and transfers it directly to the device over Bluetooth when you ask
+      it to. This doesn't involve any external server either.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      The app is not directed at children and doesn't knowingly collect
+      information from them -- in fact, it doesn't collect personal
+      information from anyone, as explained above.
+    </p>
+
+    <h2>Changes to this policy</h2>
+    <p>
+      If this policy changes, the date at the top of this same page will
+      be updated.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Privacy questions: <a href="mailto:softcdyllc@gmail.com">softcdyllc@gmail.com</a>
+    </p>
+  </section>
+
+  <footer>
+    yDog &nbsp;·&nbsp; <a href="mailto:softcdyllc@gmail.com">softcdyllc@gmail.com</a>
+  </footer>
+</div>
+</body>
+</html>
